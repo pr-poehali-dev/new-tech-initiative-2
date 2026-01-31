@@ -3,36 +3,36 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
+    name: "Александр Петров",
+    role: "Владелец кафе «Индустрия», Краснодар",
+    avatar: "/placeholder-user.jpg",
     content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
+      "Заказывали перегородки в лофт стиле для зонирования кафе. Качество работы на высоте, монтаж выполнили точно в срок. Гости в восторге от дизайна!",
   },
   {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
-    avatar: "/cybersecurity-expert-man.jpg",
+    name: "Марина Соколова",
+    role: "Дизайнер интерьеров",
+    avatar: "/placeholder-user.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Сотрудничаю с Городом Мастеров уже 3 года. Выполняют самые сложные проекты — от металлической мебели до декоративных перил. Рекомендую всем клиентам.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
-    avatar: "/asian-woman-tech-developer.jpg",
+    name: "Дмитрий Ковалев",
+    role: "Владелец загородного дома",
+    avatar: "/placeholder-user.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Делали балконные ограждения и крышки для кондиционеров. Всё идеально подошло по размерам, покраска RAL точно в цвет фасада. Работа профессионалов!",
   },
 ]
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24 px-6 bg-card">
+    <section id="portfolio" className="py-24 px-6 bg-zinc-900">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+          <h2 className="text-4xl font-bold text-white mb-4 font-orbitron">Отзывы клиентов</h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-space-mono">
+            Что говорят наши клиенты о работе с нами
           </p>
         </div>
 

@@ -3,8 +3,8 @@ import { useAspect, useTexture } from "@react-three/drei"
 import { useMemo, useRef, useState, useEffect } from "react"
 import * as THREE from "three"
 
-const TEXTUREMAP = { src: "https://i.postimg.cc/XYwvXN8D/img-4.png" }
-const DEPTHMAP = { src: "https://i.postimg.cc/2SHKQh2q/raw-4.webp" }
+const TEXTUREMAP = { src: "https://cdn.poehali.dev/projects/316e385b-3687-44b7-972e-b49a79e32548/files/40c850ca-051d-4c88-bb75-20c76922e0f2.jpg" }
+const DEPTHMAP = { src: "https://cdn.poehali.dev/projects/316e385b-3687-44b7-972e-b49a79e32548/files/40c850ca-051d-4c88-bb75-20c76922e0f2.jpg" }
 
 extend(THREE as unknown as Record<string, unknown>)
 
