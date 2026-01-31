@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import Icon from '@/components/ui/icon'
 
 export function Footer() {
   return (
@@ -8,88 +8,91 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <h2 className="font-orbitron text-2xl font-bold text-white mb-4">
-              Synapse<span className="text-red-500">AI</span>
+              Город <span className="text-red-500">Мастеров</span>
             </h2>
             <p className="font-space-mono text-gray-300 mb-6 max-w-md">
-              Продвигаем будущее нейросвязи с передовыми технологиями интерфейса мозг-компьютер.
+              Полный цикл производства от чертежа до установки в Краснодаре и крае.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Twitter size={20} />
+            <div className="flex space-x-4 items-center">
+              <a href="https://wa.me/79892285629" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors duration-200">
+                <Icon name="MessageCircle" size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Github size={20} />
+              <a href="https://t.me/+79892285629" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                <Icon name="Send" size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Linkedin size={20} />
+              <a href="mailto:4768284slava@mail.ru" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
+                <Icon name="Mail" size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Mail size={20} />
+              <a href="tel:+79892285629" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
+                <Icon name="Phone" size={24} />
               </a>
             </div>
           </div>
 
-          {/* Product */}
+          {/* Services */}
           <div>
-            <h3 className="font-orbitron text-white font-semibold mb-4">Продукт</h3>
+            <h3 className="font-orbitron text-white font-semibold mb-4">Продукция</h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#technology"
+                  href="#products"
                   className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200"
                 >
-                  Технологии
+                  Перегородки
                 </a>
               </li>
               <li>
                 <a
-                  href="#applications"
+                  href="#products"
                   className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200"
                 >
-                  Применения
+                  Крышки кондиционеров
                 </a>
               </li>
               <li>
                 <a
-                  href="#safety"
+                  href="#products"
                   className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200"
                 >
-                  Безопасность
+                  Ограждения
                 </a>
               </li>
               <li>
                 <a
-                  href="#faq"
+                  href="#products"
                   className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200"
                 >
-                  Вопросы
+                  Лофт мебель
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Contact */}
           <div>
-            <h3 className="font-orbitron text-white font-semibold mb-4">Компания</h3>
+            <h3 className="font-orbitron text-white font-semibold mb-4">Контакты</h3>
             <ul className="space-y-2">
+              <li className="font-space-mono text-gray-400">
+                <div className="flex items-start gap-2">
+                  <Icon name="MapPin" size={16} className="mt-1 flex-shrink-0" />
+                  <span className="text-sm">ул. Лизы Чайкиной, Краснодар</span>
+                </div>
+              </li>
               <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  О нас
+                <a href="tel:+79892285629" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 flex items-center gap-2">
+                  <Icon name="Phone" size={16} />
+                  <span className="text-sm">8 989 228 56 29</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  Карьера
+                <a href="mailto:4768284slava@mail.ru" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 flex items-center gap-2">
+                  <Icon name="Mail" size={16} />
+                  <span className="text-sm break-all">4768284slava@mail.ru</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  Пресса
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  Контакты
+                <a href="#contact" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
+                  Форма связи
                 </a>
               </li>
             </ul>
@@ -99,25 +102,19 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-red-500/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-space-mono text-gray-400 text-sm">2025 SynapseAI. Все права защищены.</p>
+            <p className="font-space-mono text-gray-400 text-sm">2025 Город Мастеров. Все права защищены.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
-                href="#"
+                href="#privacy"
                 className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
               >
-                Конфиденциальность
+                Политика конфиденциальности
               </a>
               <a
-                href="#"
+                href="#contact"
                 className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
               >
-                Условия использования
-              </a>
-              <a
-                href="#"
-                className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
-              >
-                Cookie-политика
+                Связаться с нами
               </a>
             </div>
           </div>
