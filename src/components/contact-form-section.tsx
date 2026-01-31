@@ -62,7 +62,7 @@ export function ContactFormSection() {
   }
 
   return (
-    <section id="contact" className="py-24 px-6 bg-black border-t border-red-500/20">
+    <section id="contact" className="py-24 px-6 bg-black border-t border-purple-500/20">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>

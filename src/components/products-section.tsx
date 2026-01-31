@@ -54,7 +54,7 @@ export function ProductsSection() {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="glow-border hover:shadow-2xl transition-all duration-300 slide-up bg-zinc-900 border-red-500/20"
+              className="glow-border hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 slide-up bg-zinc-900 border-purple-500/20 hover:border-purple-400/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative h-64 overflow-hidden rounded-t-lg">
@@ -64,7 +64,7 @@ export function ProductsSection() {
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4">
-                  <Badge variant="secondary" className="bg-red-500 text-white border-0">
+                  <Badge variant="secondary" className="bg-purple-600 text-white border-0">
                     {product.badge}
                   </Badge>
                 </div>
@@ -79,7 +79,7 @@ export function ProductsSection() {
                 <div className="space-y-2">
                   {product.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-sm text-gray-400 font-space-mono">
-                      <span className="text-red-500">✓</span>
+                      <span className="text-purple-400">✓</span>
                       <span>{feature}</span>
                     </div>
                   ))}
